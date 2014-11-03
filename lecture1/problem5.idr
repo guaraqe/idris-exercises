@@ -7,7 +7,7 @@ plus_commutes (S k) m = ?commutesSucc
 
 plus_assoc : (n : Nat) -> (m : Nat) -> (p : Nat) ->
              n + (m + p) = (n + m) + p
-plus_assoc Z     m p = refl
+plus_assoc Z     m p = Refl
 plus_assoc (S k) m p = ?assoc
 
 ---------- Proofs ----------
@@ -16,7 +16,7 @@ Main.assoc = proof
   intros
   induction k
   compute
-  exact refl
+  exact Refl
   intros
   compute
   rewrite ihn__0 
