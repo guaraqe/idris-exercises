@@ -1,3 +1,5 @@
+import Data.Vect
+
 vtake : (n:Nat) -> Vect (n+m) a -> Vect n a
 vtake  Z     v      = []
 vtake (S k) (x::xs) = x :: vtake k xs

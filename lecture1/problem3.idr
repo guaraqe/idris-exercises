@@ -1,3 +1,5 @@
+import Data.Vect
+
 -- Repeat function
 repeat : (n : Nat) -> a -> Vect n a
 repeat Z     x = []
@@ -73,7 +75,7 @@ myMatrix = [ [1,2,3]
 myVector : Vect 3 Int
 myVector = [10,11,12]
 
--- Dimension of matrices, for testing
+-- Dimension of matrices, shows how to use implicit variables
 dimV : Vect n a -> Nat
 dimV {n} vec = n
 
